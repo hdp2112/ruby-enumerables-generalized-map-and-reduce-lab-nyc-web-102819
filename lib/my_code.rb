@@ -18,9 +18,7 @@ def reduce(array, starting_point=nil)
     index = 1
   end
   while index < array.length
-    if starting_point
-      total = yield(total, array[index])
-    else
+    total = yield(total, array[index])
     index += 1
   end
   total
