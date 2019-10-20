@@ -1,5 +1,5 @@
 # Your Code Here
-source_array = [1, 2, 3, -9]
+array = [1, 2, 3, -9]
 
 def map(source_array)
   new = []
