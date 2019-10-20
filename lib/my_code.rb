@@ -15,7 +15,7 @@ def reduce(array, starting_point=0)
     yield(total = total + array[index])
     return true if array[index]
     else
-      return false
+    return false
   end
   total
 end
