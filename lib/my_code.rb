@@ -1,4 +1,3 @@
-# Your Code Here
 def map(array)
   new = []
   array.length.times do |index|
