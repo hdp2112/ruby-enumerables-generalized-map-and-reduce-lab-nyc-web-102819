@@ -11,4 +11,4 @@ def map(source_array)
   return new
 end
 
-map(array){|n| (n * -1)}
+map(array){|n| (n * n)}
