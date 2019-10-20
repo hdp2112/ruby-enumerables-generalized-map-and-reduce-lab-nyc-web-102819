@@ -12,5 +12,6 @@ print map([1, 2, 3, -9]){|n| n * n}
 def reduce(array, starting_point=0)
   if starting_point
     total = starting_point
+    i = 0
   else
     total = 0
