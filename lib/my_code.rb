@@ -14,6 +14,7 @@ def reduce(array, starting_point=nil)
     total = starting_point
   else
     total = array[0]
+    index = 1
   end
   array.length.times do |index|
     total = yield(total, array[index])
