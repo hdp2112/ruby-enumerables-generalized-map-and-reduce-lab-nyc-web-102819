@@ -1,14 +1,14 @@
 # Your Code Here
 array = [1, 2, 3, -9]
 
-def map(source_array)
+def map(s)
   new = []
   i = 0
-  while i < source_array.length do
+  while i < s.length
+    new.push(yield(s[i]))
     i += 1
   end
-  yield
-  return new
+  new
 end
 
 map(array){|n| (n * n)}
