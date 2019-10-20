@@ -20,4 +20,6 @@ def reduce(array, starting_point=0)
   
   array.length.times do |index|
     total = yield(total, array[index])
+  end
+  total
 end
