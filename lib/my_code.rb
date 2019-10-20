@@ -19,5 +19,5 @@ def reduce(array, starting_point=0)
   end
   
   array.length.times do |index|
-    
+    total = yield()
 end
