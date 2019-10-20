@@ -1,11 +1,11 @@
 # Your Code Here
 array = [1, 2, 3, -9]
 
-def map(s)
+def map(array)
   new = []
   i = 0
-  while i < s.length
-    new.push(yield(s[i]))
+  while i < array.length
+    new.push(yield(array[i]))
     i += 1
   end
   new
