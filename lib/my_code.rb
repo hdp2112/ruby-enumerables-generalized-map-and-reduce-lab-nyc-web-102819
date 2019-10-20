@@ -17,3 +17,5 @@ def reduce(array, starting_point=0)
     total = array[0]
     i = 1
   end
+  
+end
