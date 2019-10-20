@@ -12,13 +12,16 @@ print map([1, 2, 3, -9]){|n| n * n}
 def reduce(array, starting_point=nil)
   if starting_point
     total = starting_point
-    array.length.times do |index|
-    total = yield(total, array[index])
-  end
+    index = 0
   else
     total = array[0]
-    array.length.times do |index|
-    total = yield(total, array[index + 1])
+    index = 1
+  end
+  while index < array.length
+    if starting_point
+      total = yield(total, array[index])
+    else
+    index += 1
   end
   total
 end
