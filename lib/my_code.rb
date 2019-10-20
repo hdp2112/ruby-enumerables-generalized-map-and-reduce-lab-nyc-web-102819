@@ -1,8 +1,6 @@
 # Your Code Here
-def map(source_array)
-  source_array = [1, 2, 3, -9]
-  yield
-  source_array
+def map(array)
+  yield([1, 2, 3, -9])
 end
 
-map(source_array){|n| (n * n)}
+map([1, 2, 3, -9]){|n| (n * n)}
