@@ -7,8 +7,6 @@ def map(array)
   new
 end
 
-print map([1, 2, 3, -9]){|n| n * n}
-
 def reduce(array, starting_point=nil)
   if starting_point
     total = starting_point
