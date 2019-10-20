@@ -6,5 +6,5 @@ def map(array)
   array.length.times do |index|
     new << yield(array[index])
   end
-  return new
+  new
 end
