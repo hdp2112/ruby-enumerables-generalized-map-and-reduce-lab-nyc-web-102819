@@ -9,15 +9,17 @@ end
 
 print map([1, 2, 3, -9]){|n| n * n}
 
-def reduce(array, starting_point=nil)
-  if starting_point
-    total = starting_point
+def reduce(s, sp=nil)
+  if sp
+    accum = sp
+    i = 0
   else
-    total = array[0]
-    index = 1
+    accum = s[0]
+    i = 1
   end
-  array.length.times do |index|
-    total = yield(total, array[index])
+  while i < s.length
+    accum = yield(accum, s[i])
+    i += 1
   end
-  total
+  accum
 end
