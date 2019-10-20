@@ -18,5 +18,5 @@ def reduce(array, starting_point=0)
     i = 1
   end
   
-  
+  array.length.times do |
 end
