@@ -15,4 +15,4 @@ def reduce(array, starting_point=0)
     i = 0
   else
     total = array[0]
-    
+    i = 1
